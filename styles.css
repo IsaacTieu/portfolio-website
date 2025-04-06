@@ -160,28 +160,39 @@ h2 {
     color: var(--forest-green);
 }
 
+.github-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 .github-link {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--medium-green);
+    padding: 0.5rem 1rem;
+    background-color: var(--medium-green);
+    color: white;
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    margin-top: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 .github-link:hover {
-    color: var(--forest-green);
+    background-color: var(--forest-green);
+}
+
+.github-link i {
+    font-size: 1.2rem;
 }
 
 .github-link.disabled {
-    color: #6c757d;
+    color: #888888;
     cursor: not-allowed;
-}
-
-.github-link.disabled:hover {
-    color: #6c757d;
+    opacity: 0.8;
+    background-color: var(--light-green);
+    color: var(--forest-green);
+    font-weight: 500;
 }
 
 /* Footer */
