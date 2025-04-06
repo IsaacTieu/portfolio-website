@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="social-links">
+                <a href="https://github.com/IsaacTieu" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/isaactieu" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Hi! My name is Isaac and I am studying Computer Science and Chemical Engineering at UC Berkeley. Thank you for visiting my website which showcases my professional experiences. This website was built by Cursor.</p>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Work Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <h3>Software Engineering/Machine Learning Co-op</h3>
+                    <p class="company">Alexion Pharmaceuticals, AstraZeneca Rare Disease</p>
+                    <p class="location">New Haven, CT</p>
+                    <p class="duration">Jan 2025 - Present</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">OpenCV</span>
+                    </div>
+                    <ul class="description">
+                        <li>Building custom CNN pipeline to continuously monitor automated hoppers for excessive debris detections</li>
+                        <li>Creating, cleaning, & processing a custom-made dataset of 3500+ images for classification of powder build-up</li>
+                        <li>Utilized transfer learning to develop a binary classification model with 94.57% accuracy and a 0.98 AUC score</li>
+                        <li>Developed a Python app monitoring color change in live reactions, replacing the need for human supervision</li>
+                    </ul>
+                    <a href="https://github.com/yourusername/alexion-project" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Research Assistant</h3>
+                    <p class="company">UC Berkeley Ting Xu Group</p>
+                    <p class="location">Berkeley, CA</p>
+                    <p class="duration">May 2024 - Present</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                    </div>
+                    <ul class="description">
+                        <li>Automated image analysis for 50+ Transmission Electron Microscope samples, reducing time by 40% vs. hand</li>
+                        <li>Modified existing square edge detection for rectangular nanorod images to refine and visualize defect detection</li>
+                        <li>Reconstructed 3D models from datasets of 2D TEM images with computational software like Tomviz & Etomo</li>
+                        <li>Authoring a manuscript detailing Python-based image processing techniques for material characterization</li>
+                    </ul>
+                    <p class="github-link disabled">
+                        <i class="fab fa-github"></i> GitHub repository is private
+                    </p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Teaching Course Staff</h3>
+                    <p class="company">UC Berkeley CS Department - Data Structures & Algorithms</p>
+                    <p class="location">Berkeley, CA</p>
+                    <p class="duration">Aug 2024 - Dec 2024</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Java</span>
+                    </div>
+                    <ul class="description">
+                        <li>Guided students during lab sections and office hours, offering in-depth explanations of complex concepts</li>
+                        <li>Mentored students in one-on-one discussion sections, tailoring instruction to individual learning needs</li>
+                        <li>Created comprehensive course walkthrough videos reviewing key content and past exam problems</li>
+                        <li>Assisted in curriculum development by suggesting improvements based on student feedback and learning</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <h3>MultiCareDx</h3>
+                    <p class="duration">March 2025 - Present</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Flask</span>
+                    </div>
+                    <ul class="description">
+                        <li>Designing a deep learning model that integrates features from multi-modal clinical images with textual features from captions to enhance classification accuracy for eye diseases with the open-source MultiCare dataset</li>
+                        <li>Processing 11,000+ eye clinical images/cases with text & image cleaning (normalization, tokenization, outliers)</li>
+                        <li>Utilizing concatenation and attention mechanisms for multi-modal fusion and equal text/image contribution</li>
+                    </ul>
+                    <a href="https://github.com/yourusername/multicaredx" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+                
+                <div class="project-item">
+                    <h3>ML Algorithms</h3>
+                    <p class="duration">January 2025 - Present</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">NumPy</span>
+                    </div>
+                    <ul class="description">
+                        <li>Implementing some ML algorithms from scratch ranging from linear regression to neural networks to learn more about how they work on a lower level</li>
+                    </ul>
+                    <a href="https://github.com/yourusername/ml-algorithms" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+                
+                <div class="project-item">
+                    <h3>GitLite</h3>
+                    <p class="duration">June 2024 - August 2024</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Java</span>
+                    </div>
+                    <ul class="description">
+                        <li>Developed a fully functional version control system, mimicking Git's core functionalities including committing changes, branching, and merging</li>
+                        <li>Engineered a file system to keep track of multiple file versions allowing for version tracking and collaboration</li>
+                        <li>Implemented custom data structures such as HashMaps & Linked Lists to efficiently store and retrieve history</li>
+                    </ul>
+                    <p class="github-link disabled">
+                        <i class="fab fa-github"></i> GitHub repository is private
+                    </p>
+                </div>
+                
+                <div class="project-item">
+                    <h3>Pixel Plains: Boundless Lands</h3>
+                    <p class="duration">June 2024 - August 2024</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Java</span>
+                    </div>
+                    <ul class="description">
+                        <li>Developed a 2D tile-based world generation game using a procedural binary space partitioning algorithm resulting in detailed and pseudo-random virtual environments</li>
+                        <li>Implemented interactivity components such as movement and token collecting to provide user engagement</li>
+                        <li>Collaborated to refine and debug world generation processes like algorithm bugs and hallway mechanics</li>
+                    </ul>
+                    <p class="github-link disabled">
+                        <i class="fab fa-github"></i> GitHub repository is private
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Isaac Tieu. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
