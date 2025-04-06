@@ -187,11 +187,10 @@ h2 {
 }
 
 .github-link.disabled {
-    color: #888888;
+    color: var(--forest-green);
     cursor: not-allowed;
     opacity: 0.8;
     background-color: var(--light-green);
-    color: var(--forest-green);
     font-weight: 500;
 }
 
