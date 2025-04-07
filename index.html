@@ -3,182 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Isaac Tieu</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="social-links">
-                <a href="https://github.com/IsaacTieu" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/isaactieu" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" class="active" data-page="about">About</a></li>
+                <li><a href="#" data-page="experience">Experience</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <p>Hi! My name is Isaac, and I am studying Computer Science & Chemical Engineering at UC Berkeley. I am interested in AI/ML solutions for medical applications to help improve the lives of patients. This website was built with help from Cursor.</p>
-            </div>
-        </section>
-
-        <section id="experience" class="section">
-            <h2>Work Experience</h2>
-            <div class="experience-grid">
-                <div class="experience-item">
-                    <h3>Incoming ML Intern</h3>
-                    <p class="company">Abbott</p>
-                    <p class="location">Sylmar, CA</p>
-                    <p class="duration">Summer 2025</p>
+        <div id="about" class="page active">
+            <div class="about-container">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="profile.jpg" alt="Isaac Tieu">
+                    </div>
+                    <div class="profile-info">
+                        <h1>Isaac Tieu</h1>
+                        <h2>Computer Science & Chemical Engineering @ UC Berkeley</h2>
+                        <p class="email">ijtieu[at]berkeley[dot]edu</p>
+                        
+                        <div class="social-links">
+                            <a href="https://github.com/IsaacTieu" target="_blank" class="social-button">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://linkedin.com/in/isaactieu" target="_blank" class="social-button">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="experience-item">
-                    <h3>Machine Learning Co-op</h3>
-                    <p class="company">Alexion Pharmaceuticals, AstraZeneca Rare Disease</p>
-                    <p class="location">New Haven, CT</p>
-                    <p class="duration">Jan 2025 - Present</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">OpenCV</span>
+                <div class="about-content">
+                    <p>Hi! My name is Isaac, and I am studying Computer Science & Chemical Engineering at UC Berkeley. I am interested in AI/ML solutions for medical applications to help improve the lives of patients. This website was built with help from Cursor.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="experience" class="page">
+            <section id="work-experience" class="section">
+                <h2>Work Experience</h2>
+                <div class="experience-grid">
+                    <div class="experience-item">
+                        <h3>Incoming Machine Learning Intern</h3>
+                        <p class="company">Abbott</p>
+                        <p class="location">Sylmar, CA</p>
+                        <p class="duration">Summer 2025</p>
                     </div>
-                    <p class="description">
-                        Building custom CNN pipeline to continuously monitor automated hoppers for excessive debris detections
-                    </p>
-                    <p class="description">
-                        Creating, cleaning, & processing a custom-made dataset of 3500+ images for classification of powder build-up
-                    </p>
-                    <p class="description">
-                        Utilized transfer learning to develop a binary classification model with 94.57% accuracy and a 0.98 AUC score
-                    </p>
-                    <p class="description">
-                        Developed a Python app monitoring color change in live reactions, replacing the need for human supervision
-                    </p>
-                    <div class="github-links">
-                        <a href="https://github.com/IsaacTieu/alexion-hopper-monitoring" target="_blank" class="github-link">
-                            <i class="fab fa-github"></i> Error Detection CNN
+
+                    <div class="experience-item">
+                        <h3>Machine Learning Co-op</h3>
+                        <p class="company">Alexion Pharmaceuticals, AstraZeneca Rare Disease</p>
+                        <p class="location">New Haven, CT</p>
+                        <p class="duration">Jan 2025 - Present</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">OpenCV</span>
+                        </div>
+                        <p class="description">
+                            Building custom CNN pipeline to continuously monitor automated hoppers for excessive debris detections
+                        </p>
+                        <p class="description">
+                            Creating, cleaning, & processing a custom-made dataset of 3500+ images for classification of powder build-up
+                        </p>
+                        <p class="description">
+                            Utilized transfer learning to develop a binary classification model with 94.57% accuracy and a 0.98 AUC score
+                        </p>
+                        <p class="description">
+                            Developed a Python app monitoring color change in live reactions, replacing the need for human supervision
+                        </p>
+                        <div class="github-links">
+                            <a href="https://github.com/IsaacTieu/alexion-hopper-monitoring" target="_blank" class="github-link">
+                                <i class="fab fa-github"></i> Error Detection CNN
+                            </a>
+                            <a href="https://github.com/IsaacTieu/alexion-reaction-monitor" target="_blank" class="github-link">
+                                <i class="fab fa-github"></i> Reaction Monitoring App
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>Research Assistant</h3>
+                        <p class="company">UC Berkeley Ting Xu Group</p>
+                        <p class="location">Berkeley, CA</p>
+                        <p class="duration">May 2024 - Present</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                        </div>
+                        <p class="description">
+                            Automated image analysis for 50+ Transmission Electron Microscope samples, reducing time by 40% vs. hand
+                        </p>
+                        <p class="description">
+                            Modified existing square edge detection for rectangular nanorod images to refine and visualize defect detection
+                        </p>
+                        <p class="description">
+                            Reconstructed 3D models from datasets of 2D TEM images with computational software like Tomviz & Etomo
+                        </p>
+                        <p class="description">
+                            Authoring a manuscript detailing Python-based image processing techniques for material characterization
+                        </p>
+                        <p class="github-link disabled">
+                            <i class="fab fa-github"></i> GitHub repository is private
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>Teaching Course Staff</h3>
+                        <p class="company">UC Berkeley CS Department - Data Structures & Algorithms</p>
+                        <p class="location">Berkeley, CA</p>
+                        <p class="duration">Aug 2024 - Dec 2024</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Java</span>
+                        </div>
+                        <p class="description">
+                            Guided students during lab sections and office hours, offering in-depth explanations of complex concepts
+                        </p>
+                        <p class="description">
+                            Mentored students in one-on-one discussion sections, tailoring instruction to individual learning needs
+                        </p>
+                        <p class="description">
+                            Created comprehensive course walkthrough guides reviewing key content and past exam problems
+                        </p>
+                        <p class="description">
+                            Assisted in curriculum development by suggesting improvements based on student feedback and learning
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <h3>MultimodalDx (In Progress)</h3>
+                        <p class="duration">March 2025 - Present</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                        <p class="description">
+                            Multimodal disease classification using computer vision and natural language processing
+                        </p>
+                        <a href="https://github.com/IsaacTieu/multicaredx" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i> View Project
                         </a>
-                        <a href="https://github.com/IsaacTieu/alexion-reaction-monitor" target="_blank" class="github-link">
-                            <i class="fab fa-github"></i> Reaction Monitoring App
+                    </div>
+                    
+                    <div class="project-item">
+                        <h3>ML Algorithms</h3>
+                        <p class="duration">January 2025 - Present</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NumPy</span>
+                        </div>
+                        <p class="description">
+                            ML algorithms from scratch to learn more about how they work on a lower level
+                        </p>
+                        <a href="https://github.com/IsaacTieu/ml-algos" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i> View Project
                         </a>
                     </div>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Research Assistant</h3>
-                    <p class="company">UC Berkeley Ting Xu Group</p>
-                    <p class="location">Berkeley, CA</p>
-                    <p class="duration">May 2024 - Present</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">OpenCV</span>
+                    
+                    <div class="project-item">
+                        <h3>GitLite</h3>
+                        <p class="duration">June 2024 - August 2024</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Java</span>
+                        </div>
+                        <p class="description">
+                            Developed a fully functional version control system, mimicking Git's core functionalities
+                        </p>
+                        <p class="github-link disabled">
+                            <i class="fab fa-github"></i> GitHub repository is private
+                        </p>
                     </div>
-                    <p class="description">
-                        Automated image analysis for 50+ Transmission Electron Microscope samples, reducing time by 40% vs. hand
-                    </p>
-                    <p class="description">
-                        Modified existing square edge detection for rectangular nanorod images to refine and visualize defect detection
-                    </p>
-                    <p class="description">
-                        Reconstructed 3D models from datasets of 2D TEM images with computational software like Tomviz & Etomo
-                    </p>
-                    <p class="description">
-                        Authoring a manuscript detailing Python-based image processing techniques for material characterization
-                    </p>
-                    <p class="github-link disabled">
-                        <i class="fab fa-github"></i> GitHub repository is private
-                    </p>
-                </div>
-
-                <div class="experience-item">
-                    <h3>Teaching Course Staff</h3>
-                    <p class="company">UC Berkeley CS Department - Data Structures & Algorithms</p>
-                    <p class="location">Berkeley, CA</p>
-                    <p class="duration">Aug 2024 - Dec 2024</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Java</span>
+                    
+                    <div class="project-item">
+                        <h3>Pixel Plains: Boundless Lands</h3>
+                        <p class="duration">June 2024 - August 2024</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Java</span>
+                        </div>
+                        <p class="description">
+                            Developed a 2D tile-based world generation game with interactivity
+                        </p>
+                        <p class="github-link disabled">
+                            <i class="fab fa-github"></i> GitHub repository is private
+                        </p>
                     </div>
-                    <p class="description">
-                        Guided students during lab sections and office hours, offering in-depth explanations of complex concepts
-                    </p>
-                    <p class="description">
-                        Mentored students in one-on-one discussion sections, tailoring instruction to individual learning needs
-                    </p>
-                    <p class="description">
-                        Created comprehensive course walkthrough guides reviewing key content and past exam problems
-                    </p>
-                    <p class="description">
-                        Assisted in curriculum development by suggesting improvements based on student feedback and learning
-                    </p>
                 </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-item">
-                    <h3>MultimodalDx (In Progress)</h3>
-                    <p class="duration">March 2025 - Present</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Flask</span>
-                    </div>
-                    <p class="description">
-                        Multimodal disease classification using computer vision and natural language processing
-                    </p>
-                    <a href="https://github.com/IsaacTieu/multicaredx" target="_blank" class="github-link">
-                        <i class="fab fa-github"></i> View Project
-                    </a>
-                </div>
-                
-                <div class="project-item">
-                    <h3>ML Algorithms</h3>
-                    <p class="duration">January 2025 - Present</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">NumPy</span>
-                    </div>
-                    <p class="description">
-                        ML algorithms from scratch to learn more about how they work on a lower level
-                    </p>
-                    <a href="https://github.com/IsaacTieu/ml-algos" target="_blank" class="github-link">
-                        <i class="fab fa-github"></i> View Project
-                    </a>
-                </div>
-                
-                <div class="project-item">
-                    <h3>GitLite</h3>
-                    <p class="duration">June 2024 - August 2024</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Java</span>
-                    </div>
-                    <p class="description">
-                        Developed a fully functional version control system, mimicking Git's core functionalities
-                    </p>
-                    <p class="github-link disabled">
-                        <i class="fab fa-github"></i> GitHub repository is private
-                    </p>
-                </div>
-                
-                <div class="project-item">
-                    <h3>Pixel Plains: Boundless Lands</h3>
-                    <p class="duration">June 2024 - August 2024</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Java</span>
-                    </div>
-                    <p class="description">
-                        Developed a 2D tile-based world generation game with interactivity
-                    </p>
-                    <p class="github-link disabled">
-                        <i class="fab fa-github"></i> GitHub repository is private
-                    </p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer>
