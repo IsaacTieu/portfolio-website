@@ -130,13 +130,19 @@ h2 {
 }
 
 .experience-item .description {
-    list-style-position: inside;
-    margin-left: 1rem;
+    position: relative;
+    padding-left: 1.2em;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+    color: var(--text-color);
+    font-size: 0.95rem;
 }
 
-.experience-item .description li {
-    margin-bottom: 0.5rem;
-    color: var(--text-color);
+.experience-item .description::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--medium-green);
 }
 
 /* Projects section */
